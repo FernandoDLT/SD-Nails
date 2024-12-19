@@ -143,83 +143,97 @@
 
    <hr>
 
-   <!-- Booking and Contact Section -->
-   <div id="main-container">
-      <!-- Booking Section -->
-      <section id="booking">
-         <!-- Success Card -->
+   <!-- Booking Section -->
+   <section id="booking">
+      <h2>Book an Appointment</h2>
+      <div class="form-and-info">
+         <form action="/book" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Jane Doe">
+
+            <label for="service">Choose a Service:</label>
+            <select id="service" name="service" required>
+               <option value="manicure">Manicure</option>
+               <option value="pedicure">Pedicure</option>
+               <option value="gel-manicure">Gel Manicure</option>
+            </select>
+
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Select Time:</label>
+            <select id="time" name="time" required>
+               <option value="" disabled selected>Select Time</option>
+               <option value="9:00 AM">9:00 AM</option>
+               <option value="10:00 AM">10:00 AM</option>
+               <option value="11:00 AM">11:00 AM</option>
+               <option value="12:00 PM">12:00 PM</option>
+               <option value="1:00 PM">1:00 PM</option>
+               <option value="2:00 PM">2:00 PM</option>
+               <option value="3:00 PM">3:00 PM</option>
+               <option value="4:00 PM">4:00 PM</option>
+            </select>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="210-456-7891" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="john@doe.com">
+
+            <button type="submit">Book Appointment</button>
+         </form>
+
          <div class="card hide">
             <img src="images/icon-success.svg" class="icon-card-2" alt="success-checkmark" />
             <h4>Thank you!</h4>
-            <span>Your Appointment has Been Booked.</span>
-            <button class="dismiss">Dismiss message</button>
+            <span>Your message has been sent.</span>
+            <button class="dismiss">Dismiss Message</button>
          </div>
-   
-         <!-- Booking Form -->
-         <div class="form-container">
-            <h2>Book an Appointment</h2>
-            <form id="booking-form" action="/book" method="POST">
-               <label for="name">Your Name:</label>
-               <input id="name" name="subject" placeholder="Name" required />
-   
-               <label for="service">Choose a Service:</label>
-               <select id="service" name="service" required>
-                  <option value="manicure">Manicure</option>
-                  <option value="pedicure">Pedicure</option>
-                  <option value="gel-manicure">Gel Manicure</option>
-               </select>
-   
-               <label for="date">Select Date:</label>
-               <input type="date" id="date" name="date" required />
-   
-               <label for="time">Select Time:</label>
-               <select id="time" name="time" required>
-                  <option value="" disabled selected>Select Time</option>
-                  <option value="9:00 AM">9:00 AM</option>
-                  <option value="10:00 AM">10:00 AM</option>
-                  <option value="11:00 AM">11:00 AM</option>
-                  <option value="12:00 PM">12:00 PM</option>
-                  <option value="1:00 PM">1:00 PM</option>
-                  <option value="2:00 PM">2:00 PM</option>
-                  <option value="3:00 PM">3:00 PM</option>
-                  <option value="4:00 PM">4:00 PM</option>
-               </select>
-   
-               <label for="phone">Phone Number:</label>
-               <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="123456789" required />
-   
-               <label for="email">Your Email:</label>
-               <input type="email" id="email" name="email" placeholder="jonh@doe.com" required />
-   
-               <button id="submit" type="submit">Book Appointment</button>
-            </form>
-         </div>
-      </section>
-   
-      <!-- Contact Information Section -->
-      <div id="contact-info-wrapper">
-         <ul class="contact-details">
-            <h3>SD Nails</h3>
-            <li><i><b>Address:</b></i> 11503 NW Military Hwy<br />San Antonio, TX 78232</li>
-            <li><i><b>Phone:</b></i> 210-123-4567</li>
-            <li><i><b>Email:</b></i> sd.nails@gmail.com</li>
-         </ul>
-   
-         <!-- Business Hours -->
-         <div class="business-hrs">
-            <h3>Business Hours</h3>
-            <ul>
-               <li><b>Monday:</b> 8:00 AM - 6:00 PM</li>
-               <li><b>Tuesday:</b> 8:00 AM - 6:00 PM</li>
-               <li><b>Wednesday:</b> 8:00 AM - 6:00 PM</li>
-               <li><b>Thursday:</b> 8:00 AM - 6:00 PM</li>
-               <li><b>Friday:</b> 8:00 AM - 6:00 PM</li>
-               <li><b>Saturday:</b> Closed</li>
-               <li><b>Sunday:</b> Closed</li>
-            </ul>
+
+         <!-- Contact information -->
+         <div id="contact-info-wrapper">
+            <ul class="contact-details">
+               <h3>SD Nails</h3>
+               <!-- <li><i><b>Address:</b></i> 11503 NW Military Hwy
+                  <br>San Antonio, TX 78232
+               </li> -->
+               <li><i><b>Phone:</b></i> 210-123-4567</li>
+               <li><i><b>Email:</b></i> sd.nails@gmail.com</li>
+               
+               <li>
+                  <i><b>Address:</b></i> 11503 NW Military Hwy<br>San Antonio, TX 78232
+                  <div id="map">
+               </ul>
+                  <iframe
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11085.894207949978!2d-98.5164008!3d29.5502505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c593c2e2995ff%3A0xabc12345def67890!2s11503%20NW%20Military%20Hwy%2C%20San%20Antonio%2C%20TX%2078232!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                     width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                     referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+               </div>
+            </li>
+
+
+            <!-- Business Hours -->
+            <div class="business-hrs">
+               <h4>Business Hours:</h4>
+               <ul>
+                  <li class="day"><b>Monday:</b> 8:00 AM - 6:00 PM</li>
+                  <li class="day"><b>Tuesday:</b> 8:00 AM - 6:00 PM</li>
+                  <li class="day"><b>Wednesday:</b> 8:00 AM - 6:00 PM</li>
+                  <li class="day"><b>Thursday:</b> 8:00 AM - 6:00 PM</li>
+                  <li class="day"><b>Friday:</b> 8:00 AM - 6:00 PM</li>
+                  <li class="day"><b>Saturday:</b> Closed</li>
+                  <li class="day"><b>Sunday:</b> Closed</li>
+               </ul>
+            </div>
          </div>
       </div>
-   </div>
+   </section>
+
+      <!-- Footer Section -->
+      <footer>
+         <p>&copy; 2024 SD Nails. All rights reserved.</p>
+      </footer>
 
    <script src="main.js"></script>
 </body>

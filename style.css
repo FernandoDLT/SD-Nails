@@ -10,7 +10,7 @@
 body {
    font-family: sans-serif;
    line-height: 1.2;
-   color: #333;
+   /* color: #333; */
    padding: 20px;
 }
 
@@ -347,7 +347,7 @@ p {
 
 hr {
    width: 65%;
-   margin: 20px auto;
+   margin: 20px auto 50px;
    border: 0px solid rgb(255, 167, 166);
    border-width: .01px;
 }
@@ -355,16 +355,15 @@ hr {
 #booking {
    display: flex;
    flex-direction: column;
-   margin: 0 160px;
+   width: 70%;
+   margin: 0 auto;
    padding: 0px;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-   border-radius: 10px;
 }
 
 #booking h2 {
    text-align: center;
-   margin-bottom: 30px;
-   font-size: 1.24em;
+   margin-bottom: 20px;
+   font-size: 1.28em;
    color: rgb(255, 124, 121);
 }
 
@@ -373,24 +372,40 @@ hr {
    display: flex;
    flex-direction: column;
    align-items: flex-start;
-   /* width: 30%; */
-   /* margin-right: 60px; */
+   width: 30%;
+   margin-right: 80px;
 }
 
-.business-hours {
+h4 {
+   margin-bottom: 4px;
+   color: rgb(252, 10, 6);
+}
+
+.business-hrs {
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
+   margin-top: 10px;
 }
 
-.business-hours h1 {
-   margin-bottom: 10px;
+.business-hrs h5 {
+   margin-bottom: 4px;
+   font-size: 1em;
+   color: rgb(255, 124, 121);
 }
 
 .business-hours p,
 .business-hours ul,
 .cintanct-info {
    margin-bottom: 10px;
+}
+
+.business-hours ul li {
+   display: flex;
+   list-style-type: none;
+   justify-content: flex-start;
+   margin-bottom: 4px;
+   font-size: .8rem;
 }
 
 #booking form label {
@@ -402,17 +417,18 @@ hr {
 
 #booking form input,
 #booking form select {
-   width: 100%;
+   width: 120%;
    padding: 8px;
    margin-top: 5px;
 }
 
 #booking button {
+   width: 30%px;
    margin: 10px 0;
    padding: 10px 20px;
    color: white;
    background-color: rgb(255, 124, 121);
-   font-size: 1rem;
+   font-size: .8rem;
    border: none;
    border-radius: 5px;
    cursor: pointer;
@@ -422,28 +438,24 @@ hr {
    background-color: rgb(233, 145, 143);
 }
 
-#booking .form-and-info {
-   /* display: flex; */
+/* #booking .form-and-info {
+   display: flex;
    justify-content: space-between;
    justify-content: center;
-}
+} */
 
-form button:hover {
-   background-color: #ff4f9f;
-}
-
-#booking h3 {
-   margin-bottom: 16px;
+/* #booking h3 {
+   margin-bottom: 116px;
    font-family: 'Playfair Display', serif;
    text-transform: uppercase;
    color: rgb(68, 67, 67);
-}
+} */
 
-ul#contact-info-wrapper {
+/* ul#contact-info-wrapper {
    list-style: none;
    padding: 0;
    margin: 0px;
-}
+} */
 
 .contact-details {
    margin-bottom: 30px;
@@ -477,9 +489,9 @@ ul#contact-details {
    font-size: .8rem;
 }
 
-li.day b {
+/* li.day b {
    width: 100px;
-}
+} */
 
 form input,
 form select {
@@ -502,7 +514,7 @@ footer p {
    margin-top: 50px;
    font-size: clamp(12px, 3vw, 16px);
    color: rgb(253, 160, 159);
-   background: rgb(245, 245, 245);
+   /* background: rgb(245, 245, 245); */
 }
 
 h1 {
@@ -550,7 +562,7 @@ h1 {
    max-height: none !important;
 }
 
-#modify-button,
+/* #modify-button,
 #delete-button {
    display: block;
    width: 200px;
@@ -583,33 +595,10 @@ h1 {
 
 #appointment-details {
    color: rgb(52, 55, 58);
-}
+} */
 
-/* Form */
+
 /* .box {
-   margin: 0 auto;
-   margin-right: 2rem;
-   position: relative;
-   align-items: center;
-   width: 780px;
-   height: 456px;
-   background-color: var(--dark-black);
-   box-shadow: -.25em .15em 1em rgba(104, 98, 98, 0.6);
-   border-radius: 50px 5px;
-   overflow: hidden;
-} */
-
-/* .box form {
-   display: flex;
-   flex-direction: column;
-   position: absolute;
-   inset: 0.0655rem;
-   border-radius: 50px 5px;
-   z-index: 10;
-   padding: 100px 30px;
-} */
-
-.box {
    position: relative;
    align-items: center;
    width: 50%;
@@ -618,49 +607,14 @@ h1 {
    box-shadow: -.25em .15em 1em rgba(104, 98, 98, 0.6);
    border-radius: 50px 5px;
    overflow: hidden;
-}
+} */
 
-form {
+/* form {
    display: flex;
    flex-direction: column;
    position: absolute;
-   /* inset: 0.054em; */
-   /* border-radius: 50px 5px; */
-   /* background-color: var(--dark-black); */
-   /* z-index: 10; */
+
    padding: 10px 30px;
-}
-
-/* .box label {
-   color: #ffff;
-   font-size: .95em;
-   padding-bottom: .5em;
-   letter-spacing: .04em;
-} */
-
-/* .box::before {
-   content: '';
-   position: absolute;
-   top: -50%;
-   left: -50%;
-   width: 990px;
-   height: 890px;
-   background: linear-gradient(60deg, var(--blue-text), var(--blue-text));
-   transform-origin: bottom right;
-   animation: animate 6s linear infinite;
-} */
-
-/* .box::after {
-   content: '';
-   position: absolute;
-   top: -50%;
-   left: -50%;
-   width: 990px;
-   height: 890px;
-   background: linear-gradient(60deg, var(--cool-blue), var(--cool-blue));
-   transform-origin: bottom right;
-   animation: animate 6s linear infinite;
-   animation-delay: -3s;
 } */
 
 .box.show-message::before,
@@ -668,211 +622,35 @@ form {
    display: none;
 }
 
-/* Box animation */
-/* @keyframes animate {
-   0% {
-      transform: rotate(0deg);
-   }
-
-   100% {
-      transform: rotate(360deg);
-   }
-}
-
-.box {
-   animation: fadeIn 1s ease-in-out;
-} */
-/* 
-.box input {
-   width: 100%;
-   padding: 10px;
-   margin-bottom: 10px;
-   border: 1.5px solid #33353f;
-   border-radius: 8px;
-   font-size: 1em;
-}
-
-#email,
-#subject {
-   background-color: #18191E;
-   color: #ffff;
-   margin-bottom: 1.65em;
-   letter-spacing: .05em;
-   border-radius: 8px;
-} */
-
-/* textarea {
-   width: 100%;
-   height: 4.5rem;
-   font-size: 1em;
-   padding: 10px;
-   margin-bottom: 1.4em;
-   border: 1px solid #33353f;
-   color: #ffff;
-   background-color: #18191E;
-   border-radius: 7px;
-   resize: vertical;
-} */
-
 ::placeholder {
-   color: rgb(90, 90, 90);
+   color: rgb(173, 173, 173);
 }
 
-/* Styles for the submit button */
-/* button {
-   position: relative;
-   border: 1px solid #0360df;
-   border-radius: 50px;
-   padding: .5em .5em;
-   margin-top: .6rem;
-   min-width: 8em;
-   background-color: #0360df;
-   background-image:
-      radial-gradient(75% 50% at 50% 0%, #f4feff, transparent),
-      radial-gradient(75% 35% at 50% 85%, #8de3fc, transparent);
-   box-shadow:
-      inset 0 -2px 4px 1px rgba(17, 110, 231, .6),
-      inset 0 -4px 4px 1px rgba(141, 227, 252, 1),
-      inset 0 0 2px 1px rgba(255, 255, 255, .2),
-      0 1px 4px 1px rgba(17, 110, 231, .2),
-      0 1px 4px 1px rgba(0, 0, 0, .1);
-   font-size: 1.5em;
-   color: #fff;
-   text-align: center;
-   text-decoration: none;
-   text-shadow: 0 1px 1px #116ee7;
-   transition-property: border-color, transform, background-color;
-   transition-duration: .2s;
-
-   &::after {
-      content: '';
-      position: absolute;
-      top: 1px;
-      left: 50%;
-      transform: translateX(-50%);
-      border-radius: 50px;
-      width: 95%;
-      height: 40%;
-      background-image: linear-gradient(to bottom, #f4feff, transparent);
-      opacity: .75;
-   }
-
-   &:hover {
-      background-color: var(--dark-blue);
-      background-image: none;
-      cursor: pointer;
-      background-image:
-         radial-gradient(75% 50% at 50% 0%, #f4feff, transparent),
-         radial-gradient(75% 35% at 50% 85%, #8de3fc, transparent);
-      box-shadow:
-         inset 0 -2px 4px 1px rgba(17, 110, 231, .6),
-         inset 0 -4px 4px 1px rgba(141, 227, 252, 1),
-         inset 0 0 2px 1px rgba(255, 255, 255, .2),
-         0 1px 4px 1px rgba(17, 110, 231, .2),
-         0 1px 4px 1px rgba(0, 0, 0, .1);
-   }
-
-   &:active {
-      border-color: #0048d5;
-      transform: scale(.99);
-      background-color: #0048d5;
-      background-color: var(--dark-black);
-   }
+/* button.dismiss {
+   width: 40%;
 } */
 
-button.dismiss {
-   position: relative;
-   border: 2px solid #0360df;
-   border-radius: 50px;
-   padding: 16px 34px;
-   margin-right: 0.50em;
-   margin-top: 80px;
-   min-width: 8em;
-   background-color: #0360df;
-   background-image:
-      radial-gradient(75% 50% at 50% 0%, #f4feff, transparent),
-      radial-gradient(75% 35% at 50% 85%, #8de3fc, transparent);
-   box-shadow:
-      inset 0 -2px 4px 1px rgba(17, 110, 231, .6),
-      inset 0 -4px 4px 1px rgba(141, 227, 252, 1),
-      inset 0 0 2px 1px rgba(255, 255, 255, .2),
-      0 1px 4px 1px rgba(17, 110, 231, .2),
-      0 1px 4px 1px rgba(0, 0, 0, .1);
-   font-size: 1.1em;
-   color: #fff;
-   text-align: center;
-   text-decoration: none;
-   text-shadow: 0 1px 1px #116ee7;
-   transition-property: border-color, transform, background-color;
-   transition-duration: .2s;
-
-   &::after {
-      content: '';
-      position: absolute;
-      top: 1px;
-      left: 50%;
-      transform: translateX(-50%);
-      border-radius: 50px;
-      width: 95%;
-      height: 40%;
-      background-image: linear-gradient(to bottom, #f4feff, transparent);
-      opacity: .75;
-   }
-
-   &:hover {
-      background-color: var(--dark-blue);
-      background-image: none;
-      cursor: pointer;
-      background-image:
-         radial-gradient(75% 50% at 50% 0%, #f4feff, transparent),
-         radial-gradient(75% 35% at 50% 85%, #8de3fc, transparent);
-      box-shadow:
-         inset 0 -2px 4px 1px rgba(17, 110, 231, .6),
-         inset 0 -4px 4px 1px rgba(141, 227, 252, 1),
-         inset 0 0 2px 1px rgba(255, 255, 255, .2),
-         0 1px 4px 1px rgba(17, 110, 231, .2),
-         0 1px 4px 1px rgba(0, 0, 0, .1);
-   }
-
-   &:active {
-      border-color: #0048d5;
-      background-color: #0048d5;
-      background-color: var(--dark-black);
-   }
-}
-
-/* Additional styling for when input elements are in focus (clicked) */
-/* .box input:focus,
-.box textarea:focus {
-   outline: none;
-   border-color: white;
-   box-shadow: 0 0 5px rgba(0, 116, 162, 0.5);
-} */
-
-/* Card Form message */
-/* .card {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
+.dismiss {
    color: white;
-   width: 100%;
-   height: auto;
-   margin: 100px auto 0;
-} */
+   border: none;
+   padding: 10px 20px;
+   border-radius: 4px;
+   cursor: pointer;
+}
 
 .icon-card-2 {
-   width: 50px;
+   width: 40px;
 }
 
 .card h4 {
-   font-size: 2.3rem;
    margin: 20px auto 10px;
+   font-size: 1.6rem;
+   color: rgb(64, 154, 68);
 }
 
 .card span {
-   font-size: 1.4rem;
+   font-size: 1.26rem;
+   color: rgb(64, 154, 68);
 }
 
 .hide {
@@ -881,25 +659,25 @@ button.dismiss {
 
 .card h1 {
    font-size: 40px;
-   padding: 50px 0 0;
+   padding: 10px 0 0;
 }
 
 /* Layout */
-#main-container {
+/* #main-container {
    display: flex;
    justify-content: space-between;
    padding: 20px;
-}
+} */
 
 #booking {
-   flex: 1;
+   /* flex: 1; */
    /* margin-right: 20px; */
 }
 
-#contact-info-wrapper {
+/* #contact-info-wrapper {
    flex: 1;
    margin-left: 20px;
-}
+} */
 
 /* Form and Card */
 .form-container,
@@ -907,7 +685,7 @@ button.dismiss {
    background: #f9f9f9;
    /* padding: 20px; */
    border-radius: 8px;
-   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
 }
 
 .card.hide {
@@ -918,43 +696,266 @@ button.dismiss {
    text-align: center;
 }
 
-.dismiss {
-   background-color: #007bff;
-   color: white;
-   border: none;
-   padding: 10px 20px;
-   border-radius: 4px;
-   cursor: pointer;
-}
 
-.dismiss:hover {
+
+/* .dismiss:hover {
    background-color: #0056b3;
-}
+} */
 
 /* Miscellaneous */
-label {
+/* label {
    display: block;
    margin-top: 10px;
-}
+} */
 
-input,
+/* input,
 select,
 button {
-   width: 100%;
    padding: 8px;
    margin-top: 5px;
    margin-bottom: 10px;
-   border: 1px solid #ddd;
+   border: 1px solid #f00404;
    border-radius: 4px;
+} */
+
+/* #booking {
+   display: flex;
+   flex-direction: column;
+   margin: 0 auto;
+   padding: 0px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
 }
 
-#button  {
-   background-color: #007bff;
+#booking h2 {
+   text-align: center;
+   margin-bottom: 30px;
+   font-size: 1.24em;
+   color: rgb(255, 124, 121);
+} */
+
+/* Booking Form */
+/* #booking form {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   width: 30%;
+   margin-right: 60px;
+}
+
+.business-hours {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+}
+
+.business-hours h1 {
+   margin-bottom: 10px;
+}
+
+.business-hours p,
+.business-hours ul,
+.cintanct-info {
+   margin-bottom: 10px;
+}
+
+#booking form label {
+   margin-top: 10px;
+   font-size: .92em;
+   font-weight: 600;
+   color: #555;
+}
+
+#booking form input,
+#booking form select {
+   width: 100%;
+   padding: 8px;
+   margin-top: 5px;
+}
+
+#booking button {
+   margin: 10px 0;
+   padding: 10px 20px;
    color: white;
+   background-color: rgb(255, 124, 121);
+   font-size: 1rem;
    border: none;
+   border-radius: 5px;
    cursor: pointer;
+} */
+
+/* #booking button:hover {
+   background-color: rgb(233, 145, 143);
+} */
+
+#booking .form-and-info {
+   display: flex;
+   justify-content: space-between;
+   gap: 10px;
+   /* justify-content: center; */
 }
 
-button:hover {
-   background-color: #0056b3;
+form button:hover {
+   background-color: #ff4f9f;
+}
+
+#booking h3 {
+   margin: 10px 0 12px;
+   font-family: 'Playfair Display', serif;
+   text-transform: uppercase;
+   color: rgb(68, 67, 67);
+}
+
+#booking h4 {
+   margin: 0 0 12px;
+   /* text-transform: uppercase; */
+   font-family: 'Playfair Display', serif;
+   color: rgb(68, 67, 67);
+}
+
+ul#contact-info-wrapper {
+   list-style: none;
+   padding: 0;
+   margin: 0px;
+}
+
+.contact-details {
+   margin-bottom: 30px;
+}
+
+
+ul.contact-details li {
+   display: flex;
+   justify-content: flex-start;
+   margin-bottom: 4px;
+   font-size: .8rem;
+}
+
+ul.contact-details li b {
+   width: 100px;
+   display: inline-block;
+}
+
+ul.contact-details li.city {
+   padding-left: 50px;
+}
+
+ul#contact-details {
+   margin-bottom: 20px;
+}
+
+.business-hrs ul li {
+   list-style-type: none;
+   display: flex;
+   justify-content: flex-start;
+   margin-bottom: 4px;
+   font-size: .8rem;
+}
+
+li.day b {
+   width: 80px;
+}
+
+form input,
+form select {
+   padding: 10px;
+   font-size: 1rem;
+   border: 1px solid #cfcccc;
+   border-radius: 5px;
+   width: 100%;
+}
+
+section p {
+   text-align: center;
+   width: 80%;
+   margin: 10px auto;
+}
+
+/* Footer */
+footer p {
+   text-align: center;
+   margin-top: 50px;
+   font-size: clamp(12px, 3vw, 16px);
+   color: rgb(253, 160, 159);
+   /* background: rgb(245, 245, 245); */
+}
+
+#map iframe {
+    border: none;
+    border-radius: 8px;
+    margin: 4px 0 20px;
+}
+
+h1 {
+   color: black;
+   text-align: center;
+}
+
+#calendar {
+   max-width: 900px;
+   margin: 40px auto;
+}
+
+#appointment-details h2 {
+   margin: 40px auto 20px;
+   text-align: center;
+}
+
+#appointment-form {
+   align-items: center;
+   width: 40%;
+   margin: 0 auto;
+}
+
+#appointment-form label {
+   display: block;
+   margin-bottom: 10px;
+   font-weight: 700;
+}
+
+#appointment-form input {
+   margin-bottom: 20px;
+   border: 2px solid rgb(190, 190, 190);
+}
+
+#button-container {
+   margin-top: 20px;
+   text-align: center;
+}
+
+.hide {
+   display: none;
+}
+
+
+.form-and-info {
+   display: flex;
+   /* justify-content: space-between; */
+   /* gap: 20px; */
+}
+
+/* .left-column {
+   flex: 1;
+}
+
+.right-column {
+   flex: 1;
+} */
+
+.card {
+   display: none;
+   /* Hidden by default */
+}
+
+.card.show {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 40%;
+   padding: 2px;
+   background-color: #f9f9f9;
+   border: 1px solid #ddd;
+   border-radius: 8px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
