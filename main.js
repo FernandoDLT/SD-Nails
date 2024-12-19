@@ -113,12 +113,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const formData = new FormData(form);
             const email = formData.get('email');
-            const subject = formData.get('subject');
-            const message = formData.get('message');
+            const name = formData.get('name');
+            // const message = formData.get('message');
 
             fetch('/sendEmail', {
                 method: 'POST',
-                body: JSON.stringify({ email, subject, message }),
+                body: JSON.stringify({ email, name }),
                 headers: {
                     'Content-Type': 'application/json'
                 }
@@ -161,8 +161,8 @@ window.addEventListener('load', function () {
     const form = document.querySelector('form');
     const box = document.querySelector('.box');
     const emailInput = document.getElementById('email');
-    const subjectInput = document.getElementById('subject');
-    const messageInput = document.getElementById('message');
+    const nameInput = document.getElementById('name');
+    // const messageInput = document.getElementById('message');
     const card = document.querySelector(".card");
     const dismissButton = document.querySelector(".dismiss");
 
@@ -178,10 +178,10 @@ window.addEventListener('load', function () {
             const username = usernameInput ? usernameInput.value : '';
 
             const email = emailInput.value;
-            const subject = subjectInput.value;
-            const message = messageInput.value;
+            const name = nameInput.value;
+            // const message = messageInput.value;
 
-            if (validateInputs(username, email, subject, message)) {
+            if (validateInputs(username, email, name)) {
                 form.style.display = 'none';
                 box.style.animation = 'none';
                 // Shows card-2
@@ -198,8 +198,8 @@ window.addEventListener('load', function () {
             }
         }
         
-        function validateInputs(username, email, subject, message) {
-            if (!username && !email && !subject && !message) {
+        function validateInputs(username, email, name) {
+            if (!username && !email && !name) {
                 alert('Please fill in at least one field');
                 return false;
             }
@@ -214,4 +214,24 @@ window.addEventListener('load', function () {
     } else {
         console.error('Form not found');
     }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+   const bookingForm = document.querySelector("#booking-form");
+   const successCard = document.querySelector(".card");
+   const formContainer = document.querySelector(".form-container");
+   const dismissButton = document.querySelector(".dismiss");
+
+   // Submit Event Listener
+   bookingForm.addEventListener("submit", (event) => {
+      event.preventDefault(); // Prevent actual form submission
+      formContainer.classList.add("hide"); // Hide the form
+      successCard.classList.remove("hide"); // Show the success card
+   });
+
+   // Dismiss Button Event Listener
+   dismissButton.addEventListener("click", () => {
+      successCard.classList.add("hide"); // Hide the success card
+      formContainer.classList.remove("hide"); // Show the form again
+   });
 });

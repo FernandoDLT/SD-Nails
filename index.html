@@ -4,7 +4,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Schedule Helper</title>
+   <title>SD Nails</title>
    <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="/public/styles.css">
 
@@ -14,11 +14,11 @@
 <body>
 
    <!-- Burger menu spans for Mobile view -->
-   <div class="burger-menu">
+   <!-- <div class="burger-menu">
       <span></span>
       <span></span>
       <span></span>
-   </div>
+   </div> -->
 
    <!-- Header Section -->
    <header>
@@ -143,76 +143,83 @@
 
    <hr>
 
-   <!-- Booking Section -->
-   <!-- <section id="booking">
-            <h2>Book an Appointment</h2>
-            <div class="form-and-info">
-               <form action="/book" method="POST">
-                  <label for="name">Your Name:</label>
-                  <input type="text" id="name" name="name" required>
-               
-                  <label for="service">Choose a Service:</label>
-                  <select id="service" name="service" required>
-                     <option value="manicure">Manicure</option>
-                     <option value="pedicure">Pedicure</option>
-                     <option value="gel-manicure">Gel Manicure</option>
-                  </select>
-               
-                  <label for="date">Select Date:</label>
-                  <input type="date" id="date" name="date" required>
-               
-                  <label for="time">Select Time:</label>
-                  <select id="time" name="time" required>
-                     <option value="" disabled selected>Select Time</option>
-                     <option value="9:00 AM">9:00 AM</option>
-                     <option value="10:00 AM">10:00 AM</option>
-                     <option value="11:00 AM">11:00 AM</option>
-                     <option value="12:00 PM">12:00 PM</option>
-                     <option value="1:00 PM">1:00 PM</option>
-                     <option value="2:00 PM">2:00 PM</option>
-                     <option value="3:00 PM">3:00 PM</option>
-                     <option value="4:00 PM">4:00 PM</option>
-                  </select>
-               
-                  <label for="phone">Phone Number:</label>
-                  <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="123456789" required>
-               
-                  <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" required>
-               
-                  <button type="submit">Book Appointment</button>
-               </form>
-      
-            <div class="card hide">
-               <img src="images/icon-success.svg" class="icon-card-2" alt="success-checkmark" />
-               <h4>Thank you!</h4>
-               <span>Your message has been sent.</span>
-               <button class="dismiss">Dismiss message</button>
-            </div> -->
-
-   <section id="bottom">
-      <div class="box">
-         <form action="">
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required placeholder="jonh@doe.com">
-
-            <label for="subject">Subject:</label>
-            <input id="subject" name="subject" placeholder="What's on your mind?"></input>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required placeholder="Please leave a message..."></textarea>
-
-            <button type="submit">Submit Message</button>
-         </form>
-
+   <!-- Booking and Contact Section -->
+   <div id="main-container">
+      <!-- Booking Section -->
+      <section id="booking">
+         <!-- Success Card -->
          <div class="card hide">
             <img src="images/icon-success.svg" class="icon-card-2" alt="success-checkmark" />
             <h4>Thank you!</h4>
-            <span>Your message has been sent.</span>
+            <span>Your Appointment has Been Booked.</span>
             <button class="dismiss">Dismiss message</button>
          </div>
+   
+         <!-- Booking Form -->
+         <div class="form-container">
+            <h2>Book an Appointment</h2>
+            <form id="booking-form" action="/book" method="POST">
+               <label for="name">Your Name:</label>
+               <input id="name" name="subject" placeholder="Name" required />
+   
+               <label for="service">Choose a Service:</label>
+               <select id="service" name="service" required>
+                  <option value="manicure">Manicure</option>
+                  <option value="pedicure">Pedicure</option>
+                  <option value="gel-manicure">Gel Manicure</option>
+               </select>
+   
+               <label for="date">Select Date:</label>
+               <input type="date" id="date" name="date" required />
+   
+               <label for="time">Select Time:</label>
+               <select id="time" name="time" required>
+                  <option value="" disabled selected>Select Time</option>
+                  <option value="9:00 AM">9:00 AM</option>
+                  <option value="10:00 AM">10:00 AM</option>
+                  <option value="11:00 AM">11:00 AM</option>
+                  <option value="12:00 PM">12:00 PM</option>
+                  <option value="1:00 PM">1:00 PM</option>
+                  <option value="2:00 PM">2:00 PM</option>
+                  <option value="3:00 PM">3:00 PM</option>
+                  <option value="4:00 PM">4:00 PM</option>
+               </select>
+   
+               <label for="phone">Phone Number:</label>
+               <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="123456789" required />
+   
+               <label for="email">Your Email:</label>
+               <input type="email" id="email" name="email" placeholder="jonh@doe.com" required />
+   
+               <button id="submit" type="submit">Book Appointment</button>
+            </form>
+         </div>
+      </section>
+   
+      <!-- Contact Information Section -->
+      <div id="contact-info-wrapper">
+         <ul class="contact-details">
+            <h3>SD Nails</h3>
+            <li><i><b>Address:</b></i> 11503 NW Military Hwy<br />San Antonio, TX 78232</li>
+            <li><i><b>Phone:</b></i> 210-123-4567</li>
+            <li><i><b>Email:</b></i> sd.nails@gmail.com</li>
+         </ul>
+   
+         <!-- Business Hours -->
+         <div class="business-hrs">
+            <h3>Business Hours</h3>
+            <ul>
+               <li><b>Monday:</b> 8:00 AM - 6:00 PM</li>
+               <li><b>Tuesday:</b> 8:00 AM - 6:00 PM</li>
+               <li><b>Wednesday:</b> 8:00 AM - 6:00 PM</li>
+               <li><b>Thursday:</b> 8:00 AM - 6:00 PM</li>
+               <li><b>Friday:</b> 8:00 AM - 6:00 PM</li>
+               <li><b>Saturday:</b> Closed</li>
+               <li><b>Sunday:</b> Closed</li>
+            </ul>
+         </div>
       </div>
-   </section>
+   </div>
 
    <script src="main.js"></script>
 </body>
