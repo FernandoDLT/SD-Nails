@@ -216,40 +216,40 @@ window.addEventListener('load', function () {
     }
 });
 
-// document.addEventListener("DOMContentLoaded", () => {
-//    const bookingForm = document.querySelector("#booking-form");
-//    const successCard = document.querySelector(".card");
-//    const formContainer = document.querySelector(".form-container");
-//    const dismissButton = document.querySelector(".dismiss");
+document.addEventListener("DOMContentLoaded", () => {
+   const bookingForm = document.querySelector("#booking-form");
+   const successCard = document.querySelector(".card");
+   const formContainer = document.querySelector(".form-container");
+   const dismissButton = document.querySelector(".dismiss");
 
-//    // Submit Event Listener
-//    bookingForm.addEventListener("submit", (event) => {
-//       event.preventDefault(); // Prevent actual form submission
-//       formContainer.classList.add("hide"); // Hide the form
-//       successCard.classList.remove("hide"); // Show the success card
-//    });
+   // Submit Event Listener
+   bookingForm.addEventListener("submit", (event) => {
+      event.preventDefault(); // Prevent actual form submission
+      formContainer.classList.add("hide"); // Hide the form
+      successCard.classList.remove("hide"); // Show the success card
+   });
 
-//    // Dismiss Button Event Listener
-//    dismissButton.addEventListener("click", () => {
-//       successCard.classList.add("hide"); // Hide the success card
-//       formContainer.classList.remove("hide"); // Show the form again
-//    });
-// });
+   // Dismiss Button Event Listener
+   dismissButton.addEventListener("click", () => {
+      successCard.classList.add("hide"); // Hide the success card
+      formContainer.classList.remove("hide"); // Show the form again
+   });
+});
 
-// const form = document.querySelector('form');
-// const successCard = document.querySelector('.card');
-// const dismissButton = document.querySelector('.dismiss');
+const form = document.querySelector('form');
+const successCard = document.querySelector('.card');
+const dismissButton = document.querySelector('.dismiss');
 
-// form.addEventListener('submit', (e) => {
-//     e.preventDefault(); // Prevent form submission
-//     form.classList.add('hide'); // Hide the form
-//     successCard.classList.remove('hide'); // Show the card
-// });
+form.addEventListener('submit', (e) => {
+    e.preventDefault(); // Prevent form submission
+    form.classList.add('hide'); // Hide the form
+    successCard.classList.remove('hide'); // Show the card
+});
 
-// dismissButton.addEventListener('click', () => {
-//     successCard.classList.add('hide'); // Hide the card
-//     form.classList.remove('hide'); // Show the form again if needed
-// });
+dismissButton.addEventListener('click', () => {
+    successCard.classList.add('hide'); // Hide the card
+    form.classList.remove('hide'); // Show the form again if needed
+});
 
 const form = document.querySelector('form');
 const successCard = document.querySelector('.card');
