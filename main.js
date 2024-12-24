@@ -265,3 +265,18 @@ dismissButton.addEventListener('click', () => {
     successCard.classList.remove('show'); // Hide the card
     form.classList.remove('hide'); // Show the form again
 });
+
+
+const burgerMenu = document.querySelector('.burger-menu');
+const navContainer = document.querySelector('.nav-container');
+const servicesSection = document.querySelector('#services-carousel');
+
+burgerMenu.addEventListener('click', function () {
+    navContainer.classList.toggle('nav-open');
+
+    if (navContainer.classList.contains('nav-open')) {
+        servicesSection.style.marginTop = '260px'
+    } else {
+        servicesSection.style.marginTop = '0'
+    }
+});
