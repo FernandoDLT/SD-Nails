@@ -891,13 +891,6 @@ section p {
 }
 
 /* Footer */
-footer p {
-   text-align: center;
-   margin-top: 50px;
-   font-size: clamp(12px, 3vw, 16px);
-   color: rgb(253, 160, 159);
-   /* background: rgb(245, 245, 245); */
-}
 
 #map iframe {
     border: none;
@@ -905,15 +898,22 @@ footer p {
     margin: 4px 0 20px;
 }
 
+footer p {
+   text-align: center;
+   margin-top: 50px;
+   font-size: clamp(12px, 3vw, 16px);
+   color: rgb(253, 160, 159);
+   /* background: rgb(245, 245, 245); */
+}   
 h1 {
    color: black;
    text-align: center;
 }
 
-#calendar {
+/* #calendar {
    max-width: 900px;
    margin: 40px auto;
-}
+} */
 
 #appointment-details h2 {
    margin: 40px auto 20px;
@@ -944,13 +944,6 @@ h1 {
 
 .hide {
    display: none;
-}
-
-
-.form-and-info {
-   display: flex;
-   /* justify-content: space-between; */
-   /* gap: 20px; */
 }
 
 /* .left-column {
@@ -1187,7 +1180,6 @@ h1 {
       display: flex;
       flex-direction: column-reverse;
       align-items: center;
-
    }
 
    #contact-info-wrapper {
