@@ -586,31 +586,6 @@ h1 {
    max-height: none !important;
 }
 
-/* #modify-button,
-#delete-button {
-   display: block;
-   width: 200px;
-   padding: 10px;
-   margin: 10px auto;
-   font-size: 16px;
-   color: red;
-   background: white;
-   border-radius: 5px;
-   border: 1px solid red;
-   text-align: center;
-   cursor: pointer;
-}
-
-#modify-button {
-   color: green;
-   border: 1px solid green;
-   background-color: white;
-}
-
-#modify-button:hover {
-   background-color: green;
-   color: white;
-}
 
 #delete-button:hover {
    color: white;
