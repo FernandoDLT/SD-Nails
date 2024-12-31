@@ -988,7 +988,7 @@ h1 {
    .nav-container nav li {
       margin: 14px;
    }
-   
+
    .nav-container .sd-logo {
       margin: 0 10px;
    }
@@ -996,13 +996,13 @@ h1 {
    .sd-logo img {
       height: 90px;
    }
-   
+
    .nav-container .left-nav,
    .nav-container .right-nav {
       margin: 0 10px;
       justify-content: center;
    }
-   
+
    nav ul li a {
       font-size: .82rem;
    }
@@ -1040,7 +1040,11 @@ h1 {
       padding-top: 0;
       margin-top: 0;
    }
-   
+
+   header {
+      padding: 0;
+   }
+
    .nav-container {
       display: none;
       flex-direction: column;
@@ -1057,9 +1061,9 @@ h1 {
 
    #carousel-controls button {
       font-size: 1.2em;
-      padding: 6px;   
+      padding: 6px;
    }
-   
+
    .welcome {
       padding: 10px 0 20px;
    }
@@ -1097,7 +1101,7 @@ h1 {
       padding-top: 0;
       z-index: 1000;
    }
-   
+
    .nav-container nav {
       position: fixed;
       display: flex;
@@ -1167,7 +1171,7 @@ h1 {
    #main .about h2 {
       font-size: 1.2em;
    }
-   
+
    #my-services h2 {
       margin: 20px 0 10px;
       font-size: 1.2em;
@@ -1197,9 +1201,10 @@ h1 {
 
    li.day b {
       width: 86px;
-   }     
+   }
 
-   .contact-details, .business-hours {
+   .contact-details,
+   .business-hours {
       flex: 1;
       margin-right: 20px;
       width: 50%;
@@ -1214,7 +1219,7 @@ h1 {
    }
 
    #booking h2 {
-   font-size: 1em;
+      font-size: 1em;
    }
 
    #booking form label {
@@ -1306,7 +1311,7 @@ h1 {
       margin: 26px auto 16px;
       width: 80%;
    }
-   
+
    nav ul li a {
       font-size: .68em;
    }
