@@ -505,6 +505,22 @@ ul#contact-details {
  margin-top: 0px;  
 }
 
+.business-hrs ul {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+   /* Remove bullet points */
+}
+
+.business-hrs .day {
+   display: flex;
+   /* Aligns the content in a single line */
+   align-items: center;
+   /* Ensures vertical alignment */
+   white-space: nowrap;
+   /* Prevents wrapping */
+}
+
 .business-hrs ul li {
    list-style-type: none;
    display: flex;
@@ -818,11 +834,6 @@ ul#contact-info-wrapper {
    margin: 0px;
 }
 
-.contact-details {
-   margin-bottom: 30px;
-}
-
-
 ul.contact-details li {
    display: flex;
    justify-content: flex-start;
@@ -859,7 +870,7 @@ li.day {
 }
 
 li.day b {
-   width: 50px;
+   width: 90px;
 }
 
 form input,
@@ -1176,18 +1187,22 @@ h1 {
       align-items: center;
    }
 
-   #contact-info-wrapper {
+   /* #contact-info-wrapper {
       display: flex;
       flex-direction: row;
-   }
+   } */
 
-   .contact-details h3 {
+   /* .contact-details h3 {
       text-align: center;
-   }
+   } */
 
-   li.day b {
+   /* li.day b {
       width: 86px;
-   }
+   } */
+
+   /* .contact-details {
+      margin: 0 auto;
+   } */
 
    /* .contact-details,
    .business-hrs {
@@ -1198,19 +1213,24 @@ h1 {
 
    /* Style the booking form to adapt to smaller screens */
    #booking form {
-      width: 90%;
+      width: 100%;
       max-width: 400px;
       margin: 0 auto;
       margin-bottom: 10px;
    }
 
-   #booking h2 {
+   /* .contact-details {
+      margin: 0 auto;
+   } */
+
+   #booking h4, h3 {
       font-size: 1em;
+      text-align: center;
    }
 
    #booking form label {
-      /* margin-top: 10px; */
-      font-size: .88em;
+      margin-top: 6px;
+      font-size: .8em;
       font-weight: 600;
       color: #555;
    }
@@ -1246,17 +1266,17 @@ h1 {
    }
 
    /* Ensure everything is aligned to the center */
-   .contact-details ul,
+   /* .contact-details ul,
    .business-hrs ul {
       list-style: none;
       padding: 0;
-   }
+   } */
 
    /* Optional: Hide address on small screens if needed */
-   ul.contact-details li b {
+   /* ul.contact-details li b {
       display: block;
       width: 68px;
-   }
+   } */
 
    #appointment-form {
       width: 60%;
