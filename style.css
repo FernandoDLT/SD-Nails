@@ -1192,9 +1192,18 @@ h1 {
       flex-direction: row;
    } */
 
-   /* .contact-details h3 {
+      .contact-details {
+         margin: 0 auto 30px;
+         /* Centers the element horizontally */
+         width: fit-content;
+         /* Ensures the element's width fits its content */
+         /* text-align: center; */
+         /* Centers text within the element */
+      }
+
+   .contact-details h3 {
       text-align: center;
-   } */
+   }
 
    /* li.day b {
       width: 86px;
