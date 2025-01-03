@@ -944,14 +944,6 @@ h1 {
    display: none;
 }
 
-/* .left-column {
-   flex: 1;
-}
-
-.right-column {
-   flex: 1;
-} */
-
 .card {
    display: none;
    /* Hidden by default */
@@ -1192,14 +1184,14 @@ h1 {
       flex-direction: row;
    } */
 
-      .contact-details {
-         margin: 0 auto 30px;
-         /* Centers the element horizontally */
-         width: fit-content;
-         /* Ensures the element's width fits its content */
-         /* text-align: center; */
-         /* Centers text within the element */
-      }
+   .contact-details {
+      margin: 0 auto 30px;
+      /* Centers the element horizontally */
+      width: fit-content;
+      /* Ensures the element's width fits its content */
+      /* text-align: center; */
+      /* Centers text within the element */
+   }
 
    .contact-details h3 {
       text-align: center;
@@ -1341,13 +1333,6 @@ h1 {
       align-items: center;
       justify-content: center;
       margin: 0 auto;
-   }
-
-   ul.contact-details,
-   .business-hrs {
-      width: 90%;
-      margin: 0 auto 40px;
-      text-align: left;
    }
 
    ul.contact-details li b {
