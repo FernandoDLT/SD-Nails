@@ -655,17 +655,18 @@ h1 {
 }
 
 .icon-card-2 {
-   width: 40px;
+   width: 34px;
+   margin-bottom: 10px;
 }
 
 .card h4 {
-   margin: 20px auto 10px;
-   font-size: 1.6rem;
+   margin: 10px auto 0px;
+   font-size: 1.2rem;
    color: rgb(64, 154, 68);
 }
 
 .card span {
-   font-size: 1.26rem;
+   font-size: .84rem;
    color: rgb(64, 154, 68);
 }
 
@@ -950,10 +951,10 @@ h1 {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   width: 40%;
-   padding: 2px;
+   /* width: 50%; */
+   padding: 10px;
    background-color: #f9f9f9;
-   border: 1px solid #ddd;
+   /* border: 1px solid #ddd; */
    border-radius: 8px;
    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -1013,7 +1014,9 @@ h1 {
       font-size: .88rem;
    }
 
-   #boo
+   #booining h4 {
+      font-size: .8em;
+   }
 
    #booking .form-and-info {
       gap: 20px;
@@ -1169,96 +1172,101 @@ h1 {
    }
 
    /* Stacks the contact details, business hours, and booking section vertically */
-/* Stacks the contact details, business hours, and booking section vertically */
-.form-and-info {
-   display: flex;
-   flex-direction: column-reverse;
-   /* Reverses stacking order */
-   align-items: center;
-}
+   /* Stacks the contact details, business hours, and booking section vertically */
+   .form-and-info {
+      display: flex;
+      flex-direction: column-reverse;
+      /* Reverses stacking order */
+      align-items: center;
+   }
 
-/* Contact Details */
-.contact-details {
-   margin: 0 auto 30px;
-   width: fit-content;
-   /* text-align: center; */
-   /* Combines h3 alignment with the container */
-}
+   /* Contact Details */
+   .contact-details {
+      margin: 0 auto 30px;
+      width: fit-content;
+      /* text-align: center; */
+      /* Combines h3 alignment with the container */
+   }
 
-ul.contact-details li b {
-   width: 70px;
-   display: inline-block;
-   /* margin: 0 auto; */
-}
+   ul.contact-details li b {
+      width: 70px;
+      display: inline-block;
+      /* margin: 0 auto; */
+   }
 
-/* Booking Form */
-#booking form {
-   width: 100%;
-   max-width: 400px;
-   margin: 0 auto 10px;
-}
+   /* Booking Form */
+   #booking form {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto 10px;
+   }
 
-#booking h3,
-#booking h4 {
-   font-size: 1.2em;
-   text-align: center;
-   color: rgb(255, 124, 121);
-}
+   #booking h3,
+   #booking h4 {
+      font-size: 1.2em;
+      text-align: center;
+      color: rgb(255, 124, 121);
+   }
 
-#booking form label {
-   margin-top: 6px;
-   margin-bottom: 4px;
-   font-size: 0.8em;
-   font-weight: 600;
-   color: #555;
-}
+   .icon-card-2 {
+      margin-bottom: 8px;
+   }
 
-#booking input,
-#booking select {
-   width: 100%;
-   padding: 8px;
-   margin-bottom: 10px;
-}
+   #booking form label {
+      margin-top: 6px;
+      margin-bottom: 4px;
+      font-size: 0.8em;
+      font-weight: 600;
+      color: #555;
+   }
 
-#booking button {
-   width: 50%;
-   padding: 10px;
-   /* background-color: #ff69b4; */
-   background-color: rgb(255, 195, 194);
-   color: #fff;
-   border: none;
-   cursor: pointer;
-   margin: 16px auto 0;
-}
+   #booking input,
+   #booking select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+   }
 
-#booking button:hover {
-}
+   /* Business Hours */
+   .business-hrs ul li {
+      margin-bottom: 6px;
+   }
 
-/* Business Hours */
-.business-hrs ul li {
-   margin-bottom: 6px;
-}
+   /* Appointment Form */
+   #appointment-form {
+      width: 100%;
+      /* Matches the parent width */
+      max-width: 400px;
+      /* Prevents stretching */
+   }
 
-/* Appointment Form */
-#appointment-form {
-   width: 100%;
-   /* Matches the parent width */
-   max-width: 400px;
-   /* Prevents stretching */
-}
+   /* Flexbox Child Order */
+   .contact-and-map {
+      order: 1;
+   }
 
-/* Flexbox Child Order */
-.contact-and-map {
-   order: 1;
-}
+   .business-hrs {
+      order: 2;
+   }
 
-.business-hrs {
-   order: 2;
-}
+   .form-and-info {
+      order: 3;
+   }
 
-.form-and-info {
-   order: 3;
-}
+   #booking button {
+      width: 70%;
+      padding: 10px;
+      /* background-color: #ff69b4; */
+      background-color: rgb(255, 195, 194);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      margin: 16px auto 0;
+   }
+
+   .card span {
+      font-size: 1em;
+   }
 }
 
 @media screen and (max-width: 600px) {
