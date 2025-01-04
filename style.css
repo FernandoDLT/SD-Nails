@@ -489,8 +489,9 @@ ul.contact-details li {
 }
 
 ul.contact-details li b {
-   width: 100px;
+   width: 80px;
    display: inline-block;
+   /* margin: 0 auto; */
 }
 
 ul.contact-details li.city {
@@ -841,11 +842,6 @@ ul.contact-details li {
    font-size: .8rem;
 }
 
-ul.contact-details li b {
-   width: 100px;
-   display: inline-block;
-}
-
 ul.contact-details li.city {
    padding-left: 50px;
 }
@@ -1173,115 +1169,96 @@ h1 {
    }
 
    /* Stacks the contact details, business hours, and booking section vertically */
-   .form-and-info {
-      display: flex;
-      flex-direction: column-reverse;
-      align-items: center;
-   }
+/* Stacks the contact details, business hours, and booking section vertically */
+.form-and-info {
+   display: flex;
+   flex-direction: column-reverse;
+   /* Reverses stacking order */
+   align-items: center;
+}
 
-   /* #contact-info-wrapper {
-      display: flex;
-      flex-direction: row;
-   } */
+/* Contact Details */
+.contact-details {
+   margin: 0 auto 30px;
+   width: fit-content;
+   /* text-align: center; */
+   /* Combines h3 alignment with the container */
+}
 
-   .contact-details {
-      margin: 0 auto 30px;
-      /* Centers the element horizontally */
-      width: fit-content;
-      /* Ensures the element's width fits its content */
-      /* text-align: center; */
-      /* Centers text within the element */
-   }
+ul.contact-details li b {
+   width: 70px;
+   display: inline-block;
+   /* margin: 0 auto; */
+}
 
-   .contact-details h3 {
-      text-align: center;
-   }
+/* Booking Form */
+#booking form {
+   width: 100%;
+   max-width: 400px;
+   margin: 0 auto 10px;
+}
 
-   /* li.day b {
-      width: 86px;
-   } */
+#booking h3,
+#booking h4 {
+   font-size: 1.2em;
+   text-align: center;
+   color: rgb(255, 124, 121);
+}
 
-   /* .contact-details {
-      margin: 0 auto;
-   } */
+#booking form label {
+   margin-top: 6px;
+   margin-bottom: 4px;
+   font-size: 0.8em;
+   font-weight: 600;
+   color: #555;
+}
 
-   /* .contact-details,
-   .business-hrs {
-      flex: 1;
-      margin-right: 20px;
-      width: 50%;
-   } */
+#booking input,
+#booking select {
+   width: 100%;
+   padding: 8px;
+   margin-bottom: 10px;
+}
 
-   /* Style the booking form to adapt to smaller screens */
-   #booking form {
-      width: 100%;
-      max-width: 400px;
-      margin: 0 auto;
-      margin-bottom: 10px;
-   }
+#booking button {
+   width: 50%;
+   padding: 10px;
+   /* background-color: #ff69b4; */
+   background-color: rgb(255, 195, 194);
+   color: #fff;
+   border: none;
+   cursor: pointer;
+   margin: 16px auto 0;
+}
 
-   /* .contact-details {
-      margin: 0 auto;
-   } */
+#booking button:hover {
+}
 
-   #booking h4, h3 {
-      font-size: 1em;
-      text-align: center;
-   }
+/* Business Hours */
+.business-hrs ul li {
+   margin-bottom: 6px;
+}
 
-   #booking form label {
-      margin-top: 6px;
-      font-size: .8em;
-      font-weight: 600;
-      color: #555;
-   }
+/* Appointment Form */
+#appointment-form {
+   width: 100%;
+   /* Matches the parent width */
+   max-width: 400px;
+   /* Prevents stretching */
+}
 
-   #booking label {
-      display: block;
-      margin-bottom: 4px;
-   }
+/* Flexbox Child Order */
+.contact-and-map {
+   order: 1;
+}
 
-   #booking input,
-   #booking select {
-      width: 100%;
-      padding: 8px;
-      margin-bottom: 10px;
-   }
+.business-hrs {
+   order: 2;
+}
 
-   #booking button {
-      width: 100%;
-      padding: 10px;
-      background-color: #ff69b4;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-   }
-
-   #booking button:hover {
-      background-color: rgb(250, 6, 230);
-   }
-
-   /* Adjust spacing between elements within the contact section */
-   .business-hrs ul li {
-      margin-bottom: 6px;
-   }
-
-   /* Ensure everything is aligned to the center */
-   /* .contact-details ul,
-   .business-hrs ul {
-      list-style: none;
-      padding: 0;
-   } */
-
-   /* Optional: Hide address on small screens if needed */
-   /* ul.contact-details li b {
-      display: block;
-      width: 68px;
-   } */
-
-   #appointment-form {
-      width: 60%;
-   }
+.form-and-info {
+   order: 3;
+}
 }
 
 @media screen and (max-width: 600px) {
@@ -1336,7 +1313,7 @@ h1 {
    }
 
    ul.contact-details li b {
-      width: 90px;
+      /* width: 90px; */
    }
 
    footer p {
