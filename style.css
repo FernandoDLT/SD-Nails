@@ -679,22 +679,6 @@ h1 {
    padding: 10px 0 0;
 }
 
-/* Layout */
-/* #main-container {
-   display: flex;
-   justify-content: space-between;
-   padding: 20px;
-} */
-
-#booking {
-   /* flex: 1; */
-   /* margin-right: 20px; */
-}
-
-/* #contact-info-wrapper {
-   flex: 1;
-   margin-left: 20px;
-} */
 
 /* Form and Card */
 .form-container,
@@ -712,98 +696,6 @@ h1 {
 .card {
    text-align: center;
 }
-
-
-
-/* .dismiss:hover {
-   background-color: #0056b3;
-} */
-
-/* Miscellaneous */
-/* label {
-   display: block;
-   margin-top: 10px;
-} */
-
-/* input,
-select,
-button {
-   padding: 8px;
-   margin-top: 5px;
-   margin-bottom: 10px;
-   border: 1px solid #f00404;
-   border-radius: 4px;
-} */
-
-/* #booking {
-   display: flex;
-   flex-direction: column;
-   margin: 0 auto;
-   padding: 0px;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-   border-radius: 10px;
-}
-
-#booking h2 {
-   text-align: center;
-   margin-bottom: 30px;
-   font-size: 1.24em;
-   color: rgb(255, 124, 121);
-} */
-
-/* Booking Form */
-/* #booking form {
-   display: flex;
-   flex-direction: column;
-   align-items: flex-start;
-   width: 30%;
-   margin-right: 60px;
-}
-
-.business-hours {
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-}
-
-.business-hours h1 {
-   margin-bottom: 10px;
-}
-
-.business-hours p,
-.business-hours ul,
-.cintanct-info {
-   margin-bottom: 10px;
-}
-
-#booking form label {
-   margin-top: 10px;
-   font-size: .92em;
-   font-weight: 600;
-   color: #555;
-}
-
-#booking form input,
-#booking form select {
-   width: 100%;
-   padding: 8px;
-   margin-top: 5px;
-}
-
-#booking button {
-   margin: 10px 0;
-   padding: 10px 20px;
-   color: white;
-   background-color: rgb(255, 124, 121);
-   font-size: 1rem;
-   border: none;
-   border-radius: 5px;
-   cursor: pointer;
-} */
-
-/* #booking button:hover {
-   background-color: rgb(233, 145, 143);
-} */
 
 #booking .form-and-info {
    display: flex;
@@ -904,11 +796,6 @@ h1 {
    color: black;
    text-align: center;
 }
-
-/* #calendar {
-   max-width: 900px;
-   margin: 40px auto;
-} */
 
 #appointment-details h2 {
    margin: 40px auto 20px;
@@ -1172,29 +1059,34 @@ h1 {
    }
 
    /* Stacks the contact details, business hours, and booking section vertically */
-   /* Stacks the contact details, business hours, and booking section vertically */
    .form-and-info {
       display: flex;
       flex-direction: column-reverse;
-      /* Reverses stacking order */
       align-items: center;
    }
 
-   /* Contact Details */
+   .contact-and-map {
+      order: 1;
+   }
+
+   .business-hrs {
+      order: 2;
+   }
+
+   .form-and-info {
+      order: 3;
+   }
+
    .contact-details {
       margin: 0 auto 30px;
       width: fit-content;
-      /* text-align: center; */
-      /* Combines h3 alignment with the container */
    }
 
    ul.contact-details li b {
       width: 70px;
       display: inline-block;
-      /* margin: 0 auto; */
    }
 
-   /* Booking Form */
    #booking form {
       width: 100%;
       max-width: 400px;
@@ -1227,36 +1119,19 @@ h1 {
       margin-bottom: 10px;
    }
 
-   /* Business Hours */
    .business-hrs ul li {
       margin-bottom: 6px;
    }
 
-   /* Appointment Form */
    #appointment-form {
       width: 100%;
-      /* Matches the parent width */
       max-width: 400px;
-      /* Prevents stretching */
    }
 
-   /* Flexbox Child Order */
-   .contact-and-map {
-      order: 1;
-   }
-
-   .business-hrs {
-      order: 2;
-   }
-
-   .form-and-info {
-      order: 3;
-   }
 
    #booking button {
       width: 70%;
       padding: 10px;
-      /* background-color: #ff69b4; */
       background-color: rgb(255, 195, 194);
       color: #fff;
       border: none;
