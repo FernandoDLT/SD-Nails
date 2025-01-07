@@ -30,19 +30,6 @@ header {
 }
 
 /* Mobil Nav view */
-/* .burger-menu {
-   position: absolute;
-   top: 20px;
-   right: 20px;
-   display: none;
-   cursor: pointer;
-   z-index: 1000;
-   flex-direction: column;
-   justify-content: space-between;
-   width: 30px;
-   height: 20px;
-} */
-
 .burger-menu {
    position: absolute;
    top: 20px;
@@ -55,12 +42,6 @@ header {
    width: 30px;
    height: 20px;
 }
-
-/* .burger-menu span {
-   height: 4px;
-   border-radius: 2px;
-   right: 0;
-} */
 
 .burger-menu span {
    height: 4px;
@@ -373,26 +354,24 @@ hr {
 
 #booking {
    display: flex;
-   flex-direction: column;
+   justify-content: center;
    width: 100%;
-   margin: 0 auto;
-   padding: 0px;
+   gap: 55px;
+   margin-left: 5px;
 }
 
-#booking h2 {
+/* #booking h2 {
    text-align: center;
    margin-bottom: 20px;
    font-size: 1.28em;
    color: rgb(255, 124, 121);
-}
+} */
 
 /* Booking Form */
 #booking form {
    display: flex;
    flex-direction: column;
    align-items: flex-start;
-   width: 300px;
-   /* margin-right: 80px; */
 }
 
 h4 {
@@ -400,51 +379,24 @@ h4 {
    color: rgb(252, 10, 6);
 }
 
-/* .business-hrs {
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   margin-top: 10px;
-   color: red;
-}
-
-.business-hrs h4 {
-   margin-bottom: 4px;
-   font-size: .88em;
-   color: rgb(255, 124, 121);
-} */
-
-/* .business-hrs p,
-.business-hrs ul,
-.contact-info {
-   margin-bottom: 110px;
-} */
-
-/* .business-hours ul {
-   display: flex;
-   list-style-type: none;
-   justify-content: flex-start;
-   margin-bottom: 4px;
-   font-size: .8rem;
-} */
-
 #booking form label {
-   /* margin-top: 10px; */
-   font-size: .92em;
+   margin-top: 5px;
+   margin-left: 2px;
+   font-size: .90em;
    font-weight: 600;
-   color: #555;
+   color: rgb(255, 124, 121);
 }
 
 #booking form input,
 #booking form select {
    width: 100%;
-   padding: 8px;
-   margin-top: 5px;
+   padding: 5px;
+   margin: 4px 0 10px 0;
 }
 
 #booking button {
-   width: 30%px;
-   margin: 10px 0;
+   width: 100%;
+   margin: 1px 0 0;
    padding: 10px 20px;
    color: white;
    background-color: rgb(255, 124, 121);
@@ -458,34 +410,36 @@ h4 {
    background-color: rgb(233, 145, 143);
 }
 
-#booking .form-and-info {
+/* #booking .form-and-info {
    display: flex;
    justify-content: space-between;
-   /* justify-content: center; */
-}
+   justify-content: center;
+} */
 
 #booking h3 {
-   margin-bottom: 116px;
+   margin-bottom: 20px;
    font-family: 'Playfair Display', serif;
+   font-size: 1.5rem;
    text-transform: uppercase;
-   color: rgb(68, 67, 67);
+   text-align: center;
+   color: rgb(255, 124, 121);
 }
 
-ul#contact-info-wrapper {
+/* ul#contact-info-wrapper {
    list-style: none;
    padding: 0;
    margin: 0px;
-}
+} */
 
 .contact-details {
-   margin-bottom: 30px;
+   margin-bottom: 40px;
 }
 
-ul.contact-details li {
-   display: flex;
-   justify-content: flex-start;
-   margin-bottom: 4px;
-   font-size: .8rem;
+.contact-details b {
+   color: #333; 
+   font-weight: bold; 
+   font-size: 1.1em; 
+   font-style: italic;
 }
 
 ul.contact-details li b {
@@ -611,27 +565,7 @@ h1 {
 
 #appointment-details {
    color: rgb(52, 55, 58);
-} */
-
-
-/* .box {
-   position: relative;
-   align-items: center;
-   width: 50%;
-   height: 600px;
-   background-color: var(--dark-black);
-   box-shadow: -.25em .15em 1em rgba(104, 98, 98, 0.6);
-   border-radius: 50px 5px;
-   overflow: hidden;
-} */
-
-/* form {
-   display: flex;
-   flex-direction: column;
-   position: absolute;
-
-   padding: 10px 30px;
-} */
+}
 
 .box.show-message::before,
 .box.show-message::after {
@@ -697,35 +631,30 @@ h1 {
    text-align: center;
 }
 
-#booking .form-and-info {
+/* #booking .form-and-info {
    display: flex;
    justify-content: space-between;
    gap: 40px;
    justify-content: center;
-}
+} */
 
 form button:hover {
    background-color: #ff4f9f;
 }
 
-#booking h3 {
+/* #booking h3 {
    margin: 0 0 12px;
    font-family: 'Playfair Display', serif;
    text-transform: uppercase;
    color: rgb(68, 67, 67);
-}
+} */
 
 #booking h4 {
-   margin: 0 0 12px;
+   margin: 0 0 20px;
    /* text-transform: uppercase; */
    font-family: 'Playfair Display', serif;
-   color: rgb(68, 67, 67);
-}
-
-ul#contact-info-wrapper {
-   list-style: none;
-   padding: 0;
-   margin: 0px;
+   font-size: 1.16rem;
+   color: rgb(255, 124, 121);
 }
 
 ul.contact-details li {
@@ -733,22 +662,32 @@ ul.contact-details li {
    justify-content: flex-start;
    margin-bottom: 4px;
    font-size: .8rem;
+   margin: 0 0 0 40px;
 }
 
 ul.contact-details li.city {
    padding-left: 50px;
 }
 
-ul#contact-details {
+/* ul#contact-details {
    margin-bottom: 20px;
+} */
+
+#contact-and-map .contact-details {
+   display: block;
+   width: 100%;
+   /* Adjust the width as needed */
+   margin: 0 auto 10px;
+   /* padding: 0; */
+   /* To remove any default padding */
 }
 
-/* .business-hrs ul li {
-   list-style-type: none;
+/* ul.contact-details li {
    display: flex;
    justify-content: flex-start;
    margin-bottom: 4px;
    font-size: .8rem;
+   margin: 0 0 0 40px;
 } */
 
 li.day {
@@ -779,10 +718,10 @@ section p {
 
 /* Footer */
 
-#map iframe {
-    border: none;
-    border-radius: 8px;
-    margin: 4px 0 20px;
+iframe {
+   width: auto;
+
+   margin: 4px 0 20px;
 }
 
 footer p {
@@ -790,7 +729,6 @@ footer p {
    margin-top: 50px;
    font-size: clamp(12px, 3vw, 16px);
    color: rgb(253, 160, 159);
-   /* background: rgb(245, 245, 245); */
 }   
 h1 {
    color: black;
@@ -819,18 +757,12 @@ h1 {
    border: 2px solid rgb(190, 190, 190);
 }
 
-#button-container {
-   margin-top: 20px;
-   text-align: center;
-}
-
 .hide {
    display: none;
 }
 
 .card {
    display: none;
-   /* Hidden by default */
 }
 
 .card.show {
@@ -897,21 +829,22 @@ h1 {
       font-size: .92em;
    }
 
+   
+   #booking h4 {
+      font-size: .8em;
+   }
+   
+   #booking {
+      gap: 35px;
+      
+   }
+
    footer p {
       font-size: .88rem;
    }
-
-   #booining h4 {
-      font-size: .8em;
-   }
-
-   #booking .form-and-info {
-      gap: 20px;
-
-   }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 768px) {
    body {
       padding-top: 0;
       margin-top: 0;
@@ -1058,14 +991,49 @@ h1 {
       font-size: .92em;
    }
 
+   hr {
+      margin: 10px auto 20px;
+   }
+
+   #booking {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+   }
+
    /* Stacks the contact details, business hours, and booking section vertically */
    .form-and-info {
       display: flex;
-      flex-direction: column-reverse;
+      /* flex-direction: column-reverse; */
+      flex-direction: column;
       align-items: center;
    }
 
-   .contact-and-map {
+   #contact-and-map {
+      display: block;
+      /* width: 50%; */
+
+      margin: 20px auto 0;
+      padding: 0;
+
+   }
+
+   .map-container {
+      width: 100%;
+      margin: 0 auto 20px;
+   }
+
+   .business-hrs {
+      margin: 20px auto;
+   }
+
+   iframe {
+      width: 100%;
+      height: 300px;
+      margin: 0 auto;
+   }
+   
+   #contact-and-map {
       order: 1;
    }
 
@@ -1077,14 +1045,14 @@ h1 {
       order: 3;
    }
 
-   .contact-details {
+   /* .contact-details {
       margin: 0 auto 30px;
       width: fit-content;
-   }
+   } */
 
    ul.contact-details li b {
-      width: 70px;
-      display: inline-block;
+      /* width: 70px; */
+      /* display: inline-block; */
    }
 
    #booking form {
@@ -1109,7 +1077,7 @@ h1 {
       margin-bottom: 4px;
       font-size: 0.8em;
       font-weight: 600;
-      color: #555;
+      /* color: #555; */
    }
 
    #booking input,
@@ -1175,7 +1143,7 @@ h1 {
    }
 
    hr {
-      margin: 26px auto 16px;
+      margin: 10px auto 5px;
       width: 80%;
    }
 
@@ -1183,9 +1151,9 @@ h1 {
       font-size: .68em;
    }
 
-   #booking h3 {
+   /* #booking h3 {
       text-align: center;
-   }
+   } */
 
    #contact-info-wrapper {
       display: flex;
