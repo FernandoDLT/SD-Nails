@@ -360,12 +360,14 @@ hr {
    margin-left: 5px;
 }
 
-/* #booking h2 {
-   text-align: center;
-   margin-bottom: 20px;
-   font-size: 1.28em;
+h2 {
+   display: block;
+   /* text-align: center; */
+   font-family: 'Playfair Display', serif;
+   margin: 2px auto 10px;
+   font-size: .94em;
    color: rgb(255, 124, 121);
-} */
+}
 
 /* Booking Form */
 #booking form {
@@ -417,7 +419,7 @@ h4 {
 } */
 
 #booking h3 {
-   margin-bottom: 20px;
+   margin-bottom: 8px;
    font-family: 'Playfair Display', serif;
    font-size: 1.5rem;
    text-transform: uppercase;
@@ -522,10 +524,10 @@ h1 {
    margin: 40px auto;
 }
 
-#appointment-details h2 {
+/* #appointment-details h2 {
    margin: 40px auto 20px;
    text-align: center;
-}
+} */
 
 #appointment-form {
    align-items: center;
@@ -653,7 +655,7 @@ form button:hover {
    margin: 0 0 20px;
    /* text-transform: uppercase; */
    font-family: 'Playfair Display', serif;
-   font-size: 1.16rem;
+   font-size: .98rem;
    color: rgb(255, 124, 121);
 }
 
@@ -730,15 +732,16 @@ footer p {
    font-size: clamp(12px, 3vw, 16px);
    color: rgb(253, 160, 159);
 }   
+
 h1 {
    color: black;
    text-align: center;
 }
 
-#appointment-details h2 {
+/* #appointment-details h2 {
    margin: 40px auto 20px;
    text-align: center;
-}
+} */
 
 #appointment-form {
    align-items: center;
@@ -992,6 +995,11 @@ h1 {
    }
 
    hr {
+      margin: 10px auto 20px;
+   }
+
+   h2 {
+      font-size: 1.2em;
       margin: 10px auto 20px;
    }
 
