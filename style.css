@@ -357,7 +357,6 @@ hr {
    justify-content: center;
    width: 100%;
    gap: 55px;
-   margin-left: 5px;
 }
 
 h2 {
@@ -403,9 +402,12 @@ h4 {
    color: white;
    background-color: rgb(255, 124, 121);
    font-size: .8rem;
-   border: none;
+   border: .02em solid white;
    border-radius: 5px;
    cursor: pointer;
+   /* box-shadow: -4px 4px 15px rgba(0, 0, 0, 0.5); */
+   box-shadow: -3px 4px 8px rgba(233, 112, 112, 0.7);
+   /* box-shadow: -4px 4px 10px rgba(75, 75, 75, 0.6); */
 }
 
 #booking button:hover {
@@ -427,12 +429,6 @@ h4 {
    color: rgb(255, 124, 121);
 }
 
-/* ul#contact-info-wrapper {
-   list-style: none;
-   padding: 0;
-   margin: 0px;
-} */
-
 .contact-details {
    margin-bottom: 40px;
 }
@@ -440,7 +436,7 @@ h4 {
 .contact-details b {
    color: #333; 
    font-weight: bold; 
-   font-size: 1.1em; 
+   font-size: 1em; 
    font-style: italic;
 }
 
@@ -456,6 +452,10 @@ ul.contact-details li.city {
 
 ul#contact-details {
    margin-bottom: 20px;
+}
+
+#booking .business-hrs .sd-logo img {
+   display: none;
 }
 
 .business-hrs {
@@ -653,9 +653,8 @@ form button:hover {
 
 #booking h4 {
    margin: 0 0 20px;
-   /* text-transform: uppercase; */
    font-family: 'Playfair Display', serif;
-   font-size: .98rem;
+   font-size: .96rem;
    color: rgb(255, 124, 121);
 }
 
@@ -664,7 +663,7 @@ ul.contact-details li {
    justify-content: flex-start;
    margin-bottom: 4px;
    font-size: .8rem;
-   margin: 0 0 0 40px;
+   /* margin: 0 0 0 40px; */
 }
 
 ul.contact-details li.city {
@@ -722,8 +721,9 @@ section p {
 
 iframe {
    width: auto;
-
    margin: 4px 0 20px;
+   /* border-radius: 2px; */
+   box-shadow: -8px 8px 8px rgba(48, 48, 48, 0.233);
 }
 
 footer p {
@@ -831,16 +831,17 @@ h1 {
    .welcome p {
       font-size: .92em;
    }
-
    
    #booking h4 {
-      font-size: .8em;
+      margin-top: 4px;
+      /* margin-left: 36px; */
+      font-size: 1.2em;
+      /* text-align: center; */
    }
    
-   #booking {
+   /* #booking {
       gap: 35px;
-      
-   }
+   } */
 
    footer p {
       font-size: .88rem;
@@ -1008,57 +1009,89 @@ h1 {
       flex-direction: column;
       gap: 0;
    } */
-       #booking {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          /* Two equal columns */
-          grid-template-rows: auto auto;
-          /* Two rows (auto will adjust the height based on content) */
-          gap: 10px;
-          /* Adjust gap between the elements */
-          width: 100%;
-       }
+   #booking {
+      display: grid;
+      /* grid-template-columns: 1fr 1fr; */
+      /* Two equal columns */
+      grid-template-rows: auto auto;
+      /* Two rows (auto will adjust the height based on content) */
+      gap: 30px;
+      /* Adjust gap between the elements */
+      width: 100%;
+   }
    
-       #booking .business-hrs,
-       #booking .contact-and-map {
-          grid-column: span 1;
-          /* Each of these divs takes up one column */
-       }
-   
-       #booking .form-and-info {
-          grid-column: span 2;
-          /* The form will take up both columns, so it spans across the full width */
-       }
+   #booking .business-hrs,
+   #booking .contact-and-map {
+      grid-column: span 1;
+      /* Each of these divs takes up one column */
+   }
+
+   #booking .form-and-info {
+      grid-column: span 2;
+      /* The form will take up both columns, so it spans across the full width */
+   }
 
    /* Stacks the contact details, business hours, and booking section vertically */
    .form-and-info {
       display: flex;
-      /* flex-direction: column-reverse; */
       flex-direction: column;
       align-items: center;
    }
 
    #contact-and-map {
       display: block;
-      width: 100%;
-      margin: 0 0 0 0px;
-      padding: 0;
+      width: auto;
+      /* margin: 0;
+      padding: 0; */
 
+   }
+
+   .contact-details {
+      list-style: none; /* Remove default list styling */
+      padding: 0;       /* Remove default padding */
+      width: fit-content; /* Shrink the UL to fit its content */
+      margin: 0 auto;   /* Center the UL within its container */
+   }
+
+   .contact-details li {
+   text-align: left; /* Optional: Ensure text aligns naturally */
+   }
+
+   #contact-and-map .contact-details {
+      display: block;
+      /* Keep it block for layout */
+      width: fit-content;
+      /* Shrink-wrap content for auto-centering */
+      margin: 0 auto;
+      text-align: left;
+      padding: 10px;
+   }
+
+   .business-hrs {
+      width: 300px;
    }
 
    .map-container {
-      width: 90%;
-      margin: 10px 0 20px 20px;
+      /* padding: 2.5px; */
+      /* background-color: rgb(219, 218, 218); */
    }
+
+   /* #booking .business-hrs .sd-logo img {
+      display: block;
+      width: 25%;
+      height: auto;
+      text-align: center;
+      margin-left: 2;
+   } */
 
    .business-hrs {
       margin: 0px auto;
    }
 
    iframe {
-      width: 100%;
-      height: 150px;
-      margin: 0 auto;
+      width: 80%;
+      height: 200px;
+      margin: 0 0 0 36px;
    }
    
    #contact-and-map {
@@ -1079,33 +1112,11 @@ h1 {
    } */
 
    ul.contact-details li b {
-      /* width: 70px; */
-      /* display: inline-block; */
+      width: 70px;
    }
 
    #booking form {
-      width: 100%;
-      max-width: 400px;
-      margin: 0 auto 10px;
-   }
-
-   #booking h3,
-   #booking h4 {
-      font-size: 1.2em;
-      text-align: center;
-      color: rgb(255, 124, 121);
-   }
-
-   .icon-card-2 {
-      margin-bottom: 8px;
-   }
-
-   #booking form label {
-      margin-top: 6px;
-      margin-bottom: 4px;
-      font-size: 0.8em;
-      font-weight: 600;
-      /* color: #555; */
+      width: 80%;
    }
 
    #booking input,
@@ -1118,12 +1129,6 @@ h1 {
    .business-hrs ul li {
       margin-bottom: 6px;
    }
-
-   #appointment-form {
-      width: 100%;
-      max-width: 400px;
-   }
-
 
    #booking button {
       width: 70%;
@@ -1150,8 +1155,39 @@ h1 {
    #booking {
       display: flex;
       flex-direction: column;
-      gap: 0;
+      /* gap: 10px; */
    }
+
+   #booking h3 {
+      margin-top: 20px;
+      font-size: 1.26em;
+   }
+   
+   #booking h4 {
+      font-size: 1em;
+      text-align: center;
+   }
+
+   .contact-details,
+   .form-and-info {
+      width: 70%;
+      margin: 10px auto 0;
+      /* Take full width for stacking */
+      /* Center elements with spacing */
+   }
+   
+   .map-container {
+      width: 60%;
+      margin: 10px auto 0;
+   }
+
+   .form-and-info {
+      width: 80%;
+      /* Take full width for stacking */
+      margin: 0 auto 10px;
+      /* Center elements with spacing */
+   }
+
 }
 
 @media (max-width: 480px) {
@@ -1189,13 +1225,13 @@ h1 {
       text-align: center;
    } */
 
-   #contact-info-wrapper {
+   /* #contact-info-wrapper {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       margin: 0 auto;
-   }
+   } */
 
    ul.contact-details li b {
       /* width: 90px; */
