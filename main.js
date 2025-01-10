@@ -159,12 +159,11 @@ document.addEventListener('DOMContentLoaded', function () {
 // Message success functionality
 window.addEventListener('load', function () {
     const form = document.querySelector('form');
-    const box = document.querySelector('.box');
     const emailInput = document.getElementById('email');
     const nameInput = document.getElementById('name');
-    // const messageInput = document.getElementById('message');
     const card = document.querySelector(".card");
     const dismissButton = document.querySelector(".dismiss");
+    const formH2 = document.querySelector(".form-and-info h2");
 
     if (form) {
         emailInput.addEventListener('input', function () {
@@ -176,17 +175,13 @@ window.addEventListener('load', function () {
 
             const usernameInput = form.querySelector('input[type="text"]');
             const username = usernameInput ? usernameInput.value : '';
-
             const email = emailInput.value;
             const name = nameInput.value;
-            // const message = messageInput.value;
 
             if (validateInputs(username, email, name)) {
                 form.style.display = 'none';
-                box.style.animation = 'none';
-                // Shows card-2
+                formH2.style.display = 'none';
                 card.classList.remove('hide');
-                box.classList.add('show-message');
             }
         });
 
