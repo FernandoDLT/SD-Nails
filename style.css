@@ -18,7 +18,7 @@ header {
    justify-content: center;
    align-items: center;
    width: 100%;
-   padding: 10px 0;
+   padding: 8px 0;
    background-color: rgb(255, 255, 255);
    position: fixed;
    top: 0;
@@ -120,21 +120,8 @@ nav ul li a:hover {
    transform: scale(1.05);
 }
 
-.title {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   font-size: 1.25rem;
-   font-family: 'Playfair Display', serif;
-   text-align: center;
-   text-transform: uppercase;
-   color: rgb(247, 84, 81);
-   position: relative;
-   margin: 30px 0 10px;
-   letter-spacing: .08rem;
-}
 
-.title::before,
+/* .title::before,
 .title::after {
    content: '';
    flex-grow: 1;
@@ -145,17 +132,22 @@ nav ul li a:hover {
 
 .title::before {
    margin-right: 12px;
-}
+} */
 
-.title::after {
+/* .title::after {
    margin-left: 12px;
-}
+} */
 
-p {
+/* p {
    text-align: center;
-   font-size: 1.2rem;
+   font-size: 3.2rem;
    margin: 10px 0 30px;
-}
+} */
+
+/* #my-services-carousel {
+   padding: 0;
+   border-radius: 8px;
+} */
 
 /* General Section Styling */
 #services-carousel {
@@ -268,21 +260,20 @@ p {
    transform: translateY(-50%);
 }
 
-
-/* Welcome Sections */
-.welcome {
-   padding: 10px 0 40px;
+/* Scrolls to top of page*/
+#main {
+   scroll-margin-top: 10px;
 }
 
-.about {
-   margin-bottom: 40px;
-}
-
-#main .about h2 {
-   margin-bottom: 10px;
+/* Main Welcome Section h1 */
+#main h1{
+   font-size: 1.22rem;
+   font-family: 'Playfair Display', serif;
    text-align: center;
-   font-size: 1.24em;
-   color: rgb(255, 124, 121);
+   text-transform: uppercase;
+   color: rgb(247, 84, 81);
+   margin: 20px 0 10px;
+   letter-spacing: .06rem;
 }
 
 #main p {
@@ -293,23 +284,33 @@ p {
    text-align: center;
 }
 
-#my-services-carousel {
-   padding: 0;
-   border-radius: 8px;
+/* Welcome Sections */
+.welcome {
+   padding: 10px 0 0px;
+}
+
+/* Scrolls to About Me section */
+
+/* About Me */
+.about {
+   margin-bottom: 20px;
+}
+
+.about h2, #my-services h2 {
+   margin-bottom: 10px;
+   text-align: center;
+   font-size: 1.24em;
+   color: rgb(255, 124, 121);
 }
 
 #my-services {
    text-align: center;
-   width: 80%;
+   width: 100%;
    margin: 0 auto;
-   scroll-margin-top: 200px;
+   scroll-margin-top: 190px;
 }
 
-#my-services h2 {
-   color: rgb(255, 124, 121);
-   font-size: 1.24em;
-   font-weight: bold;
-}
+
 
 #my-services p {
    width: 80%;
@@ -320,10 +321,6 @@ p {
    scroll-margin-top: 20px;
 }
 
-/* Scrolls to About Me section */
-#main {
-   scroll-margin-top: -10px;
-}
 
 #gallery {
    scroll-margin-top: 200px;
@@ -361,8 +358,8 @@ hr {
    border-width: .01px;
 }
 
-#booking {
-   scroll-margin-top: 220px;
+#booking, #contact-and-map  {
+   scroll-margin-top: 200px;
 }
 
 #booking {
@@ -372,10 +369,11 @@ hr {
    gap: 55px;
 }
 
+/* Booking H2 */
 h2 {
    display: block;
    font-family: 'Playfair Display', serif;
-   margin: 2px auto 10px;
+   margin: 12px auto 0;
    font-size: .94em;
    color: rgb(255, 124, 121);
 }
@@ -385,6 +383,7 @@ h2 {
    display: flex;
    flex-direction: column;
    align-items: flex-start;
+   margin-top: 15px;
 }
 
 h4 {
@@ -397,7 +396,7 @@ h4 {
    margin-left: 2px;
    font-size: .90em;
    font-weight: 600;
-   color: rgb(255, 124, 121);
+   color: rgb(87, 87, 87);
 }
 
 #booking form input,
@@ -425,7 +424,7 @@ h4 {
 }
 
 #booking h3 {
-   margin-bottom: 8px;
+   margin-bottom: 22px;
    font-family: 'Playfair Display', serif;
    font-size: 1.5rem;
    text-transform: uppercase;
@@ -601,7 +600,7 @@ form button:hover {
 }
 
 #booking .business-hrs h4 {
-   margin: 0 0 20px;
+   margin: 10px 0 23px;
    font-family: 'Playfair Display', serif;
    font-size: .96rem;
    color: rgb(255, 124, 121);
@@ -618,9 +617,6 @@ ul.contact-details li.city {
    padding-left: 50px;
 }
 
-#contact-and-map {
-   scroll-margin-top: 220px;
-}
 
 #contact-and-map .contact-details {
    display: block;
@@ -764,9 +760,9 @@ h1 {
       font-size: .92em;
    }
    
-   #booking h4 {
-      margin-top: 4px;
-      font-size: 1.2em;
+   #booking .business-hrs h4 {
+      margin-top: 7px;
+      font-size: 1em;
    }
 
    #main {
