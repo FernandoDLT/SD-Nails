@@ -299,7 +299,8 @@ nav ul li a:hover {
 .about h2, #my-services h2 {
    margin-bottom: 10px;
    text-align: center;
-   font-size: 1.24em;
+   font-size: 1.2em;
+   text-transform: uppercase;
    color: rgb(255, 124, 121);
 }
 
@@ -310,8 +311,6 @@ nav ul li a:hover {
    scroll-margin-top: 190px;
 }
 
-
-
 #my-services p {
    width: 80%;
    margin: 0 auto 24px;
@@ -321,8 +320,9 @@ nav ul li a:hover {
    scroll-margin-top: 20px;
 }
 
-
-#gallery {
+#gallery,
+#booking,
+#contact-and-map{
    scroll-margin-top: 200px;
 }
 
@@ -358,10 +358,6 @@ hr {
    border-width: .01px;
 }
 
-#booking, #contact-and-map  {
-   scroll-margin-top: 200px;
-}
-
 #booking {
    display: flex;
    justify-content: center;
@@ -373,7 +369,7 @@ hr {
 h2 {
    display: block;
    font-family: 'Playfair Display', serif;
-   margin: 12px auto 0;
+   margin: 11.5px auto 0;
    font-size: .94em;
    color: rgb(255, 124, 121);
 }
@@ -563,11 +559,13 @@ h1 {
 }
 
 ::placeholder {
-   color: rgb(173, 173, 173);
+   color: rgb(185, 185, 185);
+   font-size: .86rem;
+   font-weight: bold;
 }
 
 .dismiss {
-   color: white;
+   background-color: rgb(255, 255, 255);
    border: none;
    padding: 10px 20px;
    border-radius: 4px;
@@ -698,7 +696,7 @@ h1 {
    justify-content: center;
    align-items: center;
    padding: 10px;
-   background-color: #f9f9f9;
+   background-color: rgb(255, 255, 255);
    border-radius: 8px;
 }
 
