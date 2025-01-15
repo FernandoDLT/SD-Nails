@@ -286,41 +286,29 @@ section p {
    width: 80%;
    /* margin: 0 auto; */
    margin: 0px auto 30px;
-   font-size: 1.2em;
+   font-size: 1.1em;
    text-align: center;
 }
 
-/* Welcome Sections */
-/* .welcome {
-   padding: 10px 0 0;
-} */
-
-/* Scrolls to About Me section */
-
 /* About Me */
-.about {
-   /* margin-bottom: 20px; */
-}
-
 .about h2, #my-services h2 {
    margin-bottom: 4px;
    text-align: center;
-   font-size: 1.2em;
+   font-size: 1.3em;
    font-family: 'Playfair Display', serif;
-   text-transform: uppercase;
    color: rgb(255, 124, 121);
 }
 
-#my-services {
-   /* text-align: center; */
-   /* width: 100%; */
-   /* margin: 0 auto; */
+#my-services p {
+   text-align: center;
+   width: 80%;
+   margin: 0 auto;
    scroll-margin-top: 190px;
+   margin: 0 auto 24px;
 }
 
 #my-services p {
    /* width: 80%; */
-   margin: 0 auto 24px;
 }
 
 #services-carousel {
@@ -382,7 +370,7 @@ hr {
    margin-bottom: 22px;
    font-family: 'Playfair Display', serif;
    font-size: 1.5rem;
-   text-transform: uppercase;
+   /* text-transform: uppercase; */
    text-align: center;
    color: rgb(255, 124, 121);
 }
@@ -939,17 +927,17 @@ h1 {
       margin-bottom: 4px;
    }
 
-   #main .about h2 {
-      font-size: 1.2em;
+   #main .about h2, #my-services h2 {
+      font-size: 1.15em;
    }
 
-   #my-services h2 {
+    /* {
       margin: 0 0 6px;
-      font-size: 1.2em;
-   }
+      font-size: .94em;
+   } */
 
    #my-services p {
-      width: 100%;
+      width: 80%;
       font-size: .92em;
    }
 
@@ -1082,12 +1070,25 @@ h1 {
    #booking,
    #gallery,
    #contact-and-map {
-         scroll-margin-top: 300px;
-      }
+      scroll-margin-top: 300px;
+   }
 
-      #main {
-         scroll-margin-top: 104px;
-      }
+   #main {
+      scroll-margin-top: 104px;
+   }
+
+   #main h1 {
+      font-size: .98em;
+   }
+
+   #main .about h2,
+   #my-services h2 {
+      font-size: 1.1em;
+   }
+
+   #main p {
+      font-size: .82em;
+   }
 
    .column {
       -ms-flex: 100%;
@@ -1128,7 +1129,7 @@ h1 {
       align-items: center;
       padding: 0;
       margin: 0 auto;
-   } */
+   }
 
    .business-hrs ul {
       list-style: none;
@@ -1160,16 +1161,36 @@ h1 {
 }
 
 @media (max-width: 480px) {
-   #my-services,
-      #booking,
-      #gallery,
-      #contact-and-map {
-         scroll-margin-top: 290px;
+   #main {
+      scroll-margin-top: 90px;
+   }
+
+   #main h1 {
+    font-size: .9rem;
+    margin-bottom: 2px;
    }
    
-      #main {
-         scroll-margin-top: 90px;
+   #my-services {
+      scroll-margin-top: 305px;
    }
+   
+   #main p {
+      font-size: .8em;
+      margin-bottom: 16px;
+   }
+   
+   #gallery,
+   #booking,
+   #contact-and-map {
+      scroll-margin-top: 290px;
+   }
+   
+   
+   #main .about h2, #my-services h2 {
+      font-size: .9rem;
+      margin-bottom: 2px;
+   }
+   
 
    #carousel li img {
       width: 90%;
