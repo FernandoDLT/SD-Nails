@@ -642,11 +642,15 @@ footer {
 
 /* Mobile responsiveness */
 @media (max-width: 1180px) {
+   #main {
+      scroll-margin-top: -10px;
+   }
+
    #my-services, 
    #booking,
    #gallery,
    #contact-and-map {
-      scroll-margin-top: 150px;
+      scroll-margin-top: 170px;
    }
    
    .nav-container {
@@ -714,10 +718,6 @@ footer {
       font-size: 1em;
    }
 
-   #main {
-      scroll-margin-top: -90px;
-   }
-   
    footer {
       font-size: .88rem;
    }
@@ -1022,16 +1022,20 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+   #main {
+      scroll-margin-top: 124px;
+   }
+
+   #gallery {
+      scroll-margin-top: 320px;
+   }
+
    #my-services,
    #booking,
-   #gallery,
    #contact-and-map {
       scroll-margin-top: 300px;
    }
 
-   #main {
-      scroll-margin-top: 104px;
-   }
 
    #main h1 {
       font-size: .98em;
@@ -1134,13 +1138,13 @@ footer {
 }
 
 @media (max-width: 480px) {
-   #main {
-      scroll-margin-top: 90px;
-   }
-
    #main h1 {
-    font-size: .9rem;
-    margin-bottom: 2px;
+      font-size: .9rem;
+      margin-bottom: 2px;
+   }
+      
+   #main {
+      scroll-margin-top: 125px;
    }
    
    #my-services {
@@ -1152,7 +1156,10 @@ footer {
       margin-bottom: 16px;
    }
    
-   #gallery,
+   #gallery {
+      scroll-margin-top: 320px;
+   }
+   
    #booking,
    #contact-and-map {
       scroll-margin-top: 290px;
