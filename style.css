@@ -99,35 +99,6 @@ nav ul li a:hover {
    transform: scale(1.05);
 }
 
-
-/* .title::before,
-.title::after {
-   content: '';
-   flex-grow: 1;
-   height: .01rem;
-   background-color: rgb(255, 167, 166);
-   max-width: 240px;
-}
-
-.title::before {
-   margin-right: 12px;
-} */
-
-/* .title::after {
-   margin-left: 12px;
-} */
-
-/* p {
-   text-align: center;
-   font-size: 3.2rem;
-   margin: 10px 0 30px;
-} */
-
-/* #my-services-carousel {
-   padding: 0;
-   border-radius: 8px;
-} */
-
 /* General Section Styling */
 #services-carousel {
    text-align: center;
@@ -270,12 +241,48 @@ section p {
 }
 
 /* About Me */
-.about h2, #my-services h2 {
+.about h2, #my-services h2, #gallery h2 {
    margin-bottom: 4px;
    text-align: center;
    font-size: 1.3em;
    font-family: 'Playfair Display', serif;
    color: rgb(255, 124, 121);
+}
+
+#gallery h2 {
+   /* Center the text */
+   text-align: center;
+   position: relative;
+   margin: 30px 0 20px;
+   font-size: 1.32em;
+   font-size: clamp(1.16em, 2vw, 1.32em);
+   text-transform: uppercase;
+   /* Enable positioning for pseudo-elements */
+}
+
+#gallery h2::before,
+#gallery h2::after {
+   content: "";
+   /* Empty content for decorative lines */
+   position: absolute;
+   top: 50%;
+   /* Align vertically with the h2 text */
+   width: 30%;
+   /* Adjust width as needed */
+   height: 1px;
+   /* Line thickness */
+   background-color: rgb(255, 124, 121);
+   /* Line color */
+}
+
+#gallery h2::before {
+   left: 145px;
+   /* Align the left line to the start */
+}
+
+#gallery h2::after {
+   right: 145px;
+   /* Align the right line to the end */
 }
 
 #my-services {
@@ -301,7 +308,6 @@ section p {
 
 #gallery {
    scroll-margin-top: 190px;
-   
 }
 
 .row {
@@ -314,7 +320,7 @@ section p {
    margin: 0 auto;
 }
 
-/* Create 3 equal columns that sits next to each other */
+/* Creates 3 equal columns that sits next to each other */
 .column {
    -ms-flex: 33%;
    flex: 33%;
@@ -349,7 +355,6 @@ hr {
    margin-bottom: 22px;
    font-family: 'Playfair Display', serif;
    font-size: 1.5rem;
-   /* text-transform: uppercase; */
    text-align: center;
    color: rgb(255, 124, 121);
 }
@@ -490,28 +495,6 @@ h1 {
    margin: 40px auto;
 }
 
-/* #appointment-form {
-   align-items: center;
-   width: 40%;
-   margin: 0 auto;
-} */
-
-/* #appointment-form label {
-   display: block;
-   margin-bottom: 10px;
-   font-weight: 700;
-} */
-
-/* #appointment-form input {
-   margin-bottom: 20px;
-   border: 2px solid rgb(190, 190, 190);
-} */
-
-/* #button-container {
-   margin-top: 20px;
-   text-align: center;
-} */
-
 .hide {
    display: none;
 }
@@ -525,10 +508,6 @@ h1 {
    color: white;
    background-color: red;
 }
-
-/* #appointment-details {
-   color: rgb(52, 55, 58);
-} */
 
 .box.show-message::before,
 .box.show-message::after {
@@ -613,15 +592,6 @@ li.day {
 li.day b {
    width: 90px;
 }
-
-/* form input,
-form select {
-   padding: 10px;
-   font-size: 1rem;
-   border: 1px solid #cfcccc;
-   border-radius: 5px;
-   width: 100%;
-} */
 
 .hide {
    display: none;
@@ -727,7 +697,17 @@ footer {
    .welcome p {
       font-size: .92em;
    }
-   
+
+   #gallery h2::before {
+      left: 80px;
+      /* Align the left line to the start */
+   }
+
+   #gallery h2::after {
+      right: 80px;
+      /* Align the right line to the end */
+   }
+
    #booking .business-hrs h4 {
       margin-top: 7px;
       text-align: center;
@@ -905,6 +885,16 @@ footer {
       font-size: .92em;
    }
 
+   #gallery h2::before {
+      left: 55px;
+      /* Align the left line to the start */
+   }
+
+   #gallery h2::after {
+      right: 55px;
+      /* Align the right line to the end */
+   }
+
    hr {
       margin: 10px auto 20px;
    }
@@ -1063,6 +1053,22 @@ footer {
       max-width: 100%;
    }
 
+   #gallery h2::before,
+   #gallery h2::after {
+      width: 26%;
+      /* Adjust width as needed */
+   }
+
+   #gallery h2::before {
+      left: 60px;
+      /* Align the left line to the start */
+   }
+
+   #gallery h2::after {
+      right: 60px;
+      /* Align the right line to the end */
+   }
+
    #booking {
       display: flex;
       flex-direction: column;
@@ -1172,6 +1178,24 @@ footer {
       background: rgba(0, 0, 0, 0.4);
       padding: 6px 12px;
       font-size: .56em;
+   }
+
+   #gallery h2 {
+      font-size: .88em;
+   }
+
+
+   #gallery h2::before,
+   #gallery h2::after {
+      width: 20%;
+   }
+
+   #gallery h2::before {
+      left: 58px;
+   }
+
+   #gallery h2::after {
+      right: 58px;
    }
 
    hr {
