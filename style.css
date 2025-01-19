@@ -1066,7 +1066,6 @@ footer {
    #gallery h2::before,
    #gallery h2::after {
       width: 26%;
-      /* Adjust width as needed */
    }
 
    #gallery h2::before {
